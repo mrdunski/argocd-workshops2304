@@ -22,13 +22,8 @@ spec:
           enabled: true
           annotations:
             kubernetes.io/ingress.class: nginx
-            kubernetes.io/tls-acme: "true"
           hosts:
           - a8acf4c81a84b45419eaaf0b8b939e4f-759977394.us-east-1.elb.amazonaws.com
-          tls:
-          - secretName: grafana
-            hosts:
-            - a8acf4c81a84b45419eaaf0b8b939e4f-759977394.us-east-1.elb.amazonaws.com
         grafana.ini:
           server:
             root_url: http://a8acf4c81a84b45419eaaf0b8b939e4f-759977394.us-east-1.elb.amazonaws.com
