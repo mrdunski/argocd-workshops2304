@@ -24,14 +24,14 @@ spec:
             kubernetes.io/ingress.class: nginx
             kubernetes.io/tls-acme: "true"
           hosts:
-          - grafana.dev.kende.pl
+          - a8acf4c81a84b45419eaaf0b8b939e4f-759977394.us-east-1.elb.amazonaws.com
           tls:
-          - secretName: grafana.dev.kende.pl
+          - secretName: grafana
             hosts:
-            - grafana.dev.kende.pl
+            - a8acf4c81a84b45419eaaf0b8b939e4f-759977394.us-east-1.elb.amazonaws.com
         grafana.ini:
           server:
-            root_url: https://grafana.dev.kende.pl
+            root_url: http://a8acf4c81a84b45419eaaf0b8b939e4f-759977394.us-east-1.elb.amazonaws.com
         resources:
           limits:
             cpu: 1000m
