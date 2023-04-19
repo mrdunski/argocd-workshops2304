@@ -56,6 +56,6 @@ spec:
           customPasswordFiles: {}
     repoURL: https://charts.bitnami.com/bitnami
     targetRevision: 9.7.*
-  syncPolicy: {}
+  syncPolicy:
     syncOptions:
       - CreateNamespace=true
