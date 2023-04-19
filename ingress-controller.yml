@@ -13,7 +13,7 @@ spec:
     helm:
       values: |
         controller.service.httpsPort.enable: false
-    repoURL: oci://ghcr.io/nginxinc/charts/nginx-ingress
+    repoURL: https://helm.nginx.com/stable
     targetRevision: "*"
   syncPolicy:
     automated:
